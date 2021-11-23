@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>회원 가입 페이지</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      h4 {
+        border-bottom: solid 2px #4d41f3;
+        padding: 10px 0px;
+      }
+      body {
+        position: absolute;
+        left: 5%;
+        transform: translateX(-5%);
+      }
+
+      ul li {
+        border-bottom: solid 1px #bbbbbb;
+        list-style-type: none;
+        width: 700px;
+        font-size: 12px;
+        padding-bottom: 5px;
+        color: #9b9898;
+        font-family: "굴림";
+      }
+
+      li span {
+        text-align: right;
+        display: inline-block;
+        width: 130px;
+        margin: 12px 12px 12px 12px;
+        font-family: "고딕";
+        font-weight: bold;
+        color: black;
+      }
+      .inputtext {
+        width: 80px;
+        border: #9b9898 solid 1px;
+      }
+      .inputradio {
+        width: 30px;
+      }
+      .inputcheck {
+        width: 20px;
+      }
+      select {
+        border: #9b9898 solid 1px;
+      }
+      #box1 {
+        background-color: #3229bb;
+        color: white;
+        font-family: "굴림";
+        font-size: 12px;
+        padding: 2px 5px;
+        border-radius: 5px;
+      }
+      #box2 {
+        font-family: "고딕";
+        margin: 15px -15px 0px 15px;
+        width: 80px;
+        background-color: white;
+        border-radius: 5px;
+        border: solid 1px #9b9898;
+      }
+      #joy {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <h4><img src="img/회원.png" />회원가입정보</h4>
+        <ul id="information">
+          <li>
+            <span><img src="img/별.png" />아이디</span
+            ><input type="text" class="inputtext" />
+            <button id="box1">중복확인</button> 영문,숫자 조합으로 4자~12자 이내
+          </li>
+          <li>
+            <span><img src="img/별.png" />비밀번호</span
+            ><input type="password" class="inputtext" /> 영문,숫자 조합으로
+            4자~12자 이내
+          </li>
+          <li>
+            <span><img src="img/별.png" />비밀번호 확인</span
+            ><input type="text" class="inputtext" />
+          </li>
+          <li>
+            <span><img src="img/별.png" />이름</span
+            ><input type="text" class="inputtext" />
+          </li>
+          <li>
+            <span><img src="img/별.png" />생년월일</span
+            ><input type="text" class="inputtext" style="width: 40px" />
+            년&emsp;
+            <input type="text" class="inputtext" style="width: 25px" />
+            월&emsp;<input type="text" class="inputtext" style="width: 25px" />
+            일
+            <input
+              type="radio"
+              name="moon"
+              checked
+              class="inputradio"
+            />음력<input type="radio" name="moon" class="inputradio" />양력
+          </li>
+          <li>
+            <span><img src="img/별.png" />이메일</span
+            ><input type="text" class="inputtext" />
+          </li>
+          <li>
+            <span><img src="img/별.png" />휴대전화</span
+            ><input type="text" class="inputtext" style="width: 30px" /> -
+            <input type="text" class="inputtext" style="width: 40px" /> -
+            <input type="text" class="inputtext" style="width: 40px" />
+          </li>
+          <li>
+            <span>직업</span
+            ><select name="jobs">
+              <option value="choice" selected>직업선택</option>
+              <option value="teacher">강사</option>
+              <option value="housewife">주부</option>
+              <option value="student">학생</option>
+            </select>
+          </li>
+          <li>
+            <span>영어수강목적</span
+            ><input type="checkbox" name="test" class="inputcheck" /> 시험대비
+            <input type="checkbox" name="job" class="inputcheck" /> 업무상
+            <input type="checkbox" name="hobby" class="inputcheck" /> 취미
+            <input type="checkbox" name="etc" class="inputcheck" />
+            기타
+          </li>
+        </ul>
+        <div id="joy">
+          <button id="box2">가입취소</button>
+          <button id="box2" type="submit">가입완료</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
